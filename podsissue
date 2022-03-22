@@ -1,0 +1,27 @@
+I fixed it doing this:
+
+I uninstalled completely cocoapods (my version was 1.11.0)
+
+gem list --local | grep cocoapods
+
+cocoapods-core (1.11.0) cocoapods-deintegrate (1.0.5) cocoapods-downloader (1.5.0) cocoapods-plugins (1.0.0) cocoapods-search (1.0.1) cocoapods-trunk (1.6.0) cocoapods-try (1.2.0)
+
+sudo gem uninstall cocoapods
+
+sudo gem uninstall cocoapods-core
+
+sudo gem uninstall cocoapods-deintegrate
+
+sudo gem uninstall cocoapods-downloader
+
+sudo gem uninstall cocoapods-plugins
+
+sudo gem uninstall cocoapods-search
+
+sudo gem uninstall cocoapods-trunk
+
+sudo gem uninstall cocoapods-try
+
+Then i installed cocoapods version 1.10.1 (you can try with more versions under 1.11.0 if you need)
+
+sudo gem install cocoapods -v 1.10.1
